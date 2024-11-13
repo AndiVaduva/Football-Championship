@@ -2,7 +2,6 @@ package model;
 
 public class Jucator {
 	 private String nume;
-	 private String antrenor;
 	 private double valoare;
 	 private int numarJocuri;
 	 private int numarVictorii;
@@ -55,4 +54,5 @@ public class Jucator {
 	    public String toString() {
 	        return nume + " - Valoare: " + valoare;
 	    }
+	    
 }

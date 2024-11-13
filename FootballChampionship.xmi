@@ -1,0 +1,529 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Oct 24 23:43:12 EEST 2024'>
+  <XMI.header>    <XMI.documentation>
+      <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
+      <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4"/></XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000961'
+      name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+      isAbstract = 'false'>
+      <UML:Namespace.ownedElement>
+        <UML:Package xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000962'
+          name = 'Model' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'>
+          <UML:Namespace.ownedElement>
+            <UML:Class xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000963'
+              name = 'Echipa ' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
+              <UML:GeneralizableElement.generalization>
+                <UML:Generalization xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000968'/>
+              </UML:GeneralizableElement.generalization>
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000964'
+                  name = 'numeEchipa' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000965'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000966'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000973'
+                  name = 'numeAntrenor ' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000974'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000975'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000976'
+                  name = 'numar Victorii' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000977'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000978'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009C3'
+                  name = 'numarInfrangeri' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009C4'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009C5'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009C6'
+                  name = 'numarJocuriSustinute' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009C7'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009C8'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009C9'
+                  name = 'numarGoluriPrimite' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009CA'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009CB'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009CC'
+                  name = 'numarGoluriInscrise' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009CD'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009CE'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Generalization xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000968'
+              isSpecification = 'false'>
+              <UML:Generalization.child>
+                <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000963'/>
+              </UML:Generalization.child>
+              <UML:Generalization.parent>
+                <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000967'/>
+              </UML:Generalization.parent>
+            </UML:Generalization>
+            <UML:Class xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000096D'
+              name = 'Campionat' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000096E'
+                  name = 'numeCampionat' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000096F'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000970'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000991'
+                  name = 'etapa' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000992'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000993'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000979'
+              name = 'Jucator' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000097A'
+                  name = 'cota de piata' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000097B'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000097C'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000097D'
+                  name = 'numeJucator' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000097E'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000097F'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000980'
+                  name = 'goluriMarcate' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000981'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000982'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000983'
+                  name = 'assist-uri' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000984'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000985'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000986'
+                  name = 'cartonaseGalbene' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000987'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000988'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000098B'
+                  name = 'cartonaseRosii' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000098C'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000098D'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000098E'
+                  name = 'meciuriJucate' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000098F'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000990'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Association xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000999'
+              name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+              <UML:Association.connection>
+                <UML:AssociationEnd xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000099A'
+                  visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
+                  aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
+                  <UML:AssociationEnd.participant>
+                    <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000963'/>
+                  </UML:AssociationEnd.participant>
+                </UML:AssociationEnd>
+                <UML:AssociationEnd xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000099B'
+                  visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
+                  aggregation = 'aggregate' targetScope = 'instance' changeability = 'changeable'>
+                  <UML:AssociationEnd.participant>
+                    <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000096D'/>
+                  </UML:AssociationEnd.participant>
+                </UML:AssociationEnd>
+              </UML:Association.connection>
+            </UML:Association>
+            <UML:Association xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000099C'
+              name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+              <UML:Association.connection>
+                <UML:AssociationEnd xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000099D'
+                  visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
+                  aggregation = 'none' targetScope = 'instance' changeability = 'changeable'>
+                  <UML:AssociationEnd.participant>
+                    <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000979'/>
+                  </UML:AssociationEnd.participant>
+                </UML:AssociationEnd>
+                <UML:AssociationEnd xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000099E'
+                  visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
+                  aggregation = 'aggregate' targetScope = 'instance' changeability = 'changeable'>
+                  <UML:AssociationEnd.participant>
+                    <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000963'/>
+                  </UML:AssociationEnd.participant>
+                </UML:AssociationEnd>
+              </UML:Association.connection>
+            </UML:Association>
+          </UML:Namespace.ownedElement>
+        </UML:Package>
+        <UML:Class xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000967'
+          name = '' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Package xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000994'
+          name = 'Services' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'>
+          <UML:Namespace.ownedElement>
+            <UML:Class xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009A0'
+              name = 'EchipaService' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009B2'
+                  name = 'echipa' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009B3'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009B4'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000963'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Operation xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009B5'
+                  name = 'EchipaService' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+                  isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
+                  isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009B7'
+                      name = 'echipa' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000963'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
+                <UML:Operation xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009B8'
+                  name = 'void adaugaJucator' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009BC'
+                      name = 'jucator' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000979'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
+                <UML:Operation xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009BA'
+                  name = 'void stergeJucator' visibility = 'private' isSpecification = 'false'
+                  ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009BD'
+                      name = 'numeJucator' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
+                <UML:Operation xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009BF'
+                  name = 'schimbaValoareJucator' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009C1'
+                      name = 'numeJucator' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
+                    <UML:Parameter xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009C2'
+                      name = 'valoareJucator' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
+                <UML:Operation xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009CF'
+                  name = 'determinareLocOcupat' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009D1'
+                      name = 'echipa' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000963'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000099F'
+              name = 'CampionatService' visibility = 'public' isSpecification = 'false'
+              isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
+              <UML:Classifier.feature>
+                <UML:Operation xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009A6'
+                  name = 'void adaugaEchipa' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009BE'
+                      name = 'echipa' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:0000000000000963'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
+                <UML:Operation xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009A8'
+                  name = 'void afisareClasament' visibility = 'public' isSpecification = 'false'
+                  ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+                  isLeaf = 'false' isAbstract = 'false'/>
+                <UML:Operation xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009AC'
+                  name = 'void afiseazaEchipeCuGoluriPrimiteMaiMulteDecat' visibility = 'public'
+                  isSpecification = 'false' ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential'
+                  isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009B1'
+                      name = 'numarGoluri' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
+                <UML:Attribute xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009AE'
+                  name = 'campionat' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+                  changeability = 'changeable' targetScope = 'instance'>
+                  <UML:StructuralFeature.multiplicity>
+                    <UML:Multiplicity xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009AF'>
+                      <UML:Multiplicity.range>
+                        <UML:MultiplicityRange xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009B0'
+                          lower = '1' upper = '1'/>
+                      </UML:Multiplicity.range>
+                    </UML:Multiplicity>
+                  </UML:StructuralFeature.multiplicity>
+                  <UML:StructuralFeature.type>
+                    <UML:Class xmi.idref = '-64--88-56-1-73beb5b1:192bab147c2:-8000:000000000000096D'/>
+                  </UML:StructuralFeature.type>
+                </UML:Attribute>
+                <UML:Operation xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009D2'
+                  name = 'void afiseazaEchipeCuGoluriMarcateMaiMulteDecat' visibility = 'public'
+                  isSpecification = 'false' ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential'
+                  isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009D4'
+                      name = 'numarGoluri' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
+                <UML:Operation xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009D5'
+                  name = 'void afiseazaEchipeCuNumarDePuncteMaiMicDecat' visibility = 'public'
+                  isSpecification = 'false' ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential'
+                  isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+                  <UML:BehavioralFeature.parameter>
+                    <UML:Parameter xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009D7'
+                      name = 'numarPuncte' isSpecification = 'false' kind = 'in'>
+                      <UML:Parameter.type>
+                        <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087C'/>
+                      </UML:Parameter.type>
+                    </UML:Parameter>
+                  </UML:BehavioralFeature.parameter>
+                </UML:Operation>
+              </UML:Classifier.feature>
+            </UML:Class>
+          </UML:Namespace.ownedElement>
+        </UML:Package>
+        <UML:Package xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009A1'
+          name = 'Util' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'>
+          <UML:Namespace.ownedElement>
+            <UML:Class xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009A2'
+              name = 'ComparatorEchipePerValoare' visibility = 'public' isSpecification = 'false'
+              isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+          </UML:Namespace.ownedElement>
+        </UML:Package>
+        <UML:Package xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009A3'
+          name = 'Exceptions' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'>
+          <UML:Namespace.ownedElement>
+            <UML:Class xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009A4'
+              name = 'JucatorNotFoundException' visibility = 'public' isSpecification = 'false'
+              isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+            <UML:Class xmi.id = '-64--88-56-1-73beb5b1:192bab147c2:-8000:00000000000009A5'
+              name = 'EchipaNotFoundException' visibility = 'public' isSpecification = 'false'
+              isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+          </UML:Namespace.ownedElement>
+        </UML:Package>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </XMI.content>
+</XMI>

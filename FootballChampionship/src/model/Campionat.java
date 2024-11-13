@@ -19,6 +19,7 @@ public class Campionat {
     }
 
     public void afiseazaClasament() {
+    	System.out.println("========CLASAMENT========\n");
         echipe.sort((e1, e2) -> Integer.compare(e2.getPuncte(), e1.getPuncte()));
         for (Echipa e : echipe) {
             System.out.println(e.getNume() + " - Puncte: " + e.getPuncte());
@@ -48,5 +49,9 @@ public class Campionat {
                 System.out.println(e.getNume());
             }
         }
+    }
+    
+    public List<Echipa> getEchipe() {
+        return echipe;
     }
 }
