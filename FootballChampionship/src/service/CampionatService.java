@@ -15,6 +15,11 @@ public class CampionatService {
         this.campionat = campionat;
     }
 	
+	public Campionat getCampionat()
+	{
+		return campionat;
+	}
+	
 	public void simuleazaEtapa(Campionat campionat) {
 	    // Verificăm dacă avem un număr suficient de echipe (par și cel puțin 2)
 	    if (campionat.getEchipe().size() < 2) {
@@ -77,7 +82,7 @@ public class CampionatService {
         campionat.afiseazaClasament();
     }
     
-    private Echipa cautaEchipa(String numeEchipa) {
+    public Echipa cautaEchipa(String numeEchipa) {
         for (Echipa echipa : campionat.getEchipe()) {
             if (echipa.getNume().equals(numeEchipa)) {
                 return echipa;

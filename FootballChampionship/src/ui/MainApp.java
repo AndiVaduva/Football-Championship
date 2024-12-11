@@ -2,57 +2,151 @@ package ui;
 
 import model.Campionat;
 import model.Echipa;
-import model.Jucator;
 import service.CampionatService;
 
-public class MainApp {
-	public static void main(String[] args) {
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class MainApp extends JFrame {
+    private CampionatService service;
+    private Campionat campionat;
+
+    public MainApp(CampionatService service, Campionat campionat) {
+        this.service = service;
+        this.campionat = campionat;
+        // Configurarea ferestrei
+        setTitle("Management Campionat");
+        setSize(600, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
+
+        // Panou pentru butoane
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new GridLayout(3, 2));
+
+        // Butoane pentru funcționalități
+        JButton simulateButton = new JButton("Simulează Etapă");
+        JButton showRankingButton = new JButton("Afișează Clasament");
+        JButton addPlayerButton = new JButton("Adaugă Jucător");
+        JButton removePlayerButton = new JButton("Șterge Jucător");
+        JButton updatePlayerButton = new JButton("Actualizează Jucător");
+
+        // Adăugarea butoanelor la panou
+        buttonPanel.add(simulateButton);
+        buttonPanel.add(showRankingButton);
+        buttonPanel.add(addPlayerButton);
+        buttonPanel.add(removePlayerButton);
+        buttonPanel.add(updatePlayerButton);
+
+        // Adăugarea panoului în fereastră
+        add(buttonPanel, BorderLayout.CENTER);
+
+        // Zona de afișare a rezultatelor
+        JTextArea outputArea = new JTextArea();
+        outputArea.setEditable(false);
+        JScrollPane scrollPane = new JScrollPane(outputArea);
+        add(scrollPane, BorderLayout.SOUTH);
+
+        // Listener pentru "Simulează Etapă"
+        simulateButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                service.simuleazaEtapa(service.getCampionat());
+                outputArea.append("Etapa a fost simulată.\n");
+            }
+        });
+
+        // Listener pentru "Afișează Clasament"
+        showRankingButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                outputArea.append("Clasamentul echipelor:\n");
+                service.afiseazaClasament();
+            }
+        });
+
+     // Listener pentru "Adaugă Jucător"
+        addPlayerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String echipa = JOptionPane.showInputDialog("Introduceți numele echipei:");
+                String jucator = JOptionPane.showInputDialog("Introduceți numele jucătorului:");
+                double valoare = 0;
+
+                // Verificare pentru valoare numerică validă
+                try {
+                    valoare = Double.parseDouble(JOptionPane.showInputDialog("Introduceți valoarea jucătorului:"));
+                } catch (NumberFormatException ex) {
+                    outputArea.append("Valoare invalidă introdusă.\n");
+                    return;  // Ieși din metoda dacă valoarea nu este validă
+                }
+
+                Echipa echipaGasita = service.cautaEchipa(echipa);
+                if (echipaGasita != null) {
+                    echipaGasita.adaugaJucator(new model.Jucator(jucator, valoare));
+                    outputArea.append("Jucătorul " + jucator + " a fost adăugat la echipa " + echipa + ".\n");
+                } else {
+                    outputArea.append("Echipa " + echipa + " nu a fost găsită.\n");
+                }
+            }
+        });
+        
+     // Listener pentru "Șterge Jucător"
+        removePlayerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String echipa = JOptionPane.showInputDialog("Introduceți numele echipei:");
+                String jucator = JOptionPane.showInputDialog("Introduceți numele jucătorului:");
+
+                Echipa echipaGasita = service.cautaEchipa(echipa);
+                if (echipaGasita != null) {
+                    boolean sters = echipaGasita.stergeJucator(jucator);
+                    if (sters) {
+                        outputArea.append("Jucătorul " + jucator + " a fost șters din echipa " + echipa + ".\n");
+                    } else {
+                        outputArea.append("Jucătorul " + jucator + " nu a fost găsit în echipa " + echipa + ".\n");
+                    }
+                } else {
+                    outputArea.append("Echipa " + echipa + " nu a fost găsită.\n");
+                }
+            }
+        });
+        
+     // Listener pentru "Actualizează Jucător"
+        updatePlayerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String echipa = JOptionPane.showInputDialog("Introduceți numele echipei:");
+                String jucator = JOptionPane.showInputDialog("Introduceți numele jucătorului:");
+                double valoare = Double.parseDouble(JOptionPane.showInputDialog("Introduceți noua valoare a jucătorului:"));
+
+                Echipa echipaGasita = service.cautaEchipa(echipa);
+                if (echipaGasita != null) {
+                    boolean actualizat = echipaGasita.actualizeazaValoareJucator(jucator, valoare);
+                    if (actualizat) {
+                        outputArea.append("Valoarea jucătorului " + jucator + " a fost actualizată la " + valoare + ".\n");
+                    } else {
+                        outputArea.append("Jucătorul " + jucator + " nu a fost găsit în echipa " + echipa + ".\n");
+                    }
+                } else {
+                    outputArea.append("Echipa " + echipa + " nu a fost găsită.\n");
+                }
+            }
+        });
+
+
+    }
+
+    public static void main(String[] args) {
         Campionat campionat = new Campionat("Liga 1", 10, 5);
         CampionatService service = new CampionatService(campionat);
 
-        Echipa echipa1 = new Echipa("FCSB", "Charalambous");
-        Echipa echipa2 = new Echipa("Dinamo", "Kopic");
-        Echipa echipa3 = new Echipa("Universitatea Craiova","Galca");
-        Echipa echipa4 = new Echipa("Rapid","Sumudica");
-        Echipa echipa5 = new Echipa("Farul","Hagi");
-        Echipa echipa6 = new Echipa("U Cluj","Sabau");
-        Echipa echipa7 = new Echipa("Petrolul","Alagic");
-        Echipa echipa8 = new Echipa("CFR","Petrescu");
-        Echipa echipa9 = new Echipa("Otelul","Munteanu");
-        Echipa echipa10 = new Echipa("UTA","Rednic");
-        
-        Jucator jucator1 = new Jucator("Alex Mitrita",9.5);
-        Jucator jucator2 = new Jucator("Denis Alibec",9.3);
-        Jucator jucator3 = new Jucator("Elvir Koljic",8);
-        
-        echipa3.adaugaJucator(jucator1);
-        echipa3.adaugaJucator(jucator3);
-        echipa3.adaugaJucator(jucator2);
-        
-        System.out.println(echipa3);
-        
-        echipa3.actualizeazaValoareJucator("Elvir Koljic", 9);
-        echipa3.stergeJucator(jucator2);
-        
-        
-
-        campionat.adaugaEchipa(echipa1);
-        campionat.adaugaEchipa(echipa2);
-        campionat.adaugaEchipa(echipa3);
-        campionat.adaugaEchipa(echipa4);
-        campionat.adaugaEchipa(echipa5);
-        campionat.adaugaEchipa(echipa6);
-        campionat.adaugaEchipa(echipa7);
-        campionat.adaugaEchipa(echipa8);
-        campionat.adaugaEchipa(echipa9);
-        campionat.adaugaEchipa(echipa10);
-
-		
-		service.simuleazaEtapa(campionat);
-		service.afiseazaClasament();
-		System.out.println();
-		
-		System.out.println(echipa3);
-		 
+        // Crearea interfeței grafice
+        SwingUtilities.invokeLater(() -> {
+            MainApp gui = new MainApp(service, campionat);
+            gui.setVisible(true);
+        });
     }
 }
