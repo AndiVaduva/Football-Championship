@@ -16,6 +16,7 @@ public class MainApp extends JFrame {
     public MainApp(CampionatService service, Campionat campionat) {
         this.service = service;
         this.campionat = campionat;
+
         // Configurarea ferestrei
         setTitle("Management Campionat");
         setSize(600, 400);
@@ -32,6 +33,7 @@ public class MainApp extends JFrame {
         JButton addPlayerButton = new JButton("Adaugă Jucător");
         JButton removePlayerButton = new JButton("Șterge Jucător");
         JButton updatePlayerButton = new JButton("Actualizează Jucător");
+        JButton addTeamButton = new JButton("Adaugă Echipa");
 
         // Adăugarea butoanelor la panou
         buttonPanel.add(simulateButton);
@@ -39,6 +41,7 @@ public class MainApp extends JFrame {
         buttonPanel.add(addPlayerButton);
         buttonPanel.add(removePlayerButton);
         buttonPanel.add(updatePlayerButton);
+        buttonPanel.add(addTeamButton);
 
         // Adăugarea panoului în fereastră
         add(buttonPanel, BorderLayout.CENTER);
@@ -67,7 +70,7 @@ public class MainApp extends JFrame {
             }
         });
 
-     // Listener pentru "Adaugă Jucător"
+        // Listener pentru "Adaugă Jucător"
         addPlayerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -92,8 +95,8 @@ public class MainApp extends JFrame {
                 }
             }
         });
-        
-     // Listener pentru "Șterge Jucător"
+
+        // Listener pentru "Șterge Jucător"
         removePlayerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -113,8 +116,8 @@ public class MainApp extends JFrame {
                 }
             }
         });
-        
-     // Listener pentru "Actualizează Jucător"
+
+        // Listener pentru "Actualizează Jucător"
         updatePlayerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -136,7 +139,22 @@ public class MainApp extends JFrame {
             }
         });
 
+        // Listener pentru "Adaugă Echipa"
+        addTeamButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String teamName = JOptionPane.showInputDialog("Introduceți numele echipei:");
+                String coachName = JOptionPane.showInputDialog("Introduceți numele antrenorului:");
 
+                if (teamName != null && coachName != null && !teamName.isEmpty() && !coachName.isEmpty()) {
+                    Echipa newTeam = new Echipa(teamName, coachName);
+                    campionat.adaugaEchipa(newTeam);
+                    outputArea.append("Echipa " + teamName + " a fost adăugată în campionat.\n");
+                } else {
+                    outputArea.append("Vă rugăm să introduceți atât numele echipei cât și al antrenorului.\n");
+                }
+            }
+        });
     }
 
     public static void main(String[] args) {
